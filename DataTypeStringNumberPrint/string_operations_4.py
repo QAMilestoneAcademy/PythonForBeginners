@@ -13,4 +13,13 @@ print("spam " * 3)
 ##What is the output of
 print(3*'7')
 
+##Using inplace operators
+x = "spam"
+print(x)
+
+x += "eggs"
+print(x)
+
+
+
 

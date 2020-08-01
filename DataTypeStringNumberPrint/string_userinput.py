@@ -7,5 +7,9 @@ print("Hello, " + name)
 age = input("Enter your age: ")
 print(type(age))
 num_age=int(age)
-print(type(num_age))
-print("Your age after 4 years: "+ str(int(age)+4))
+num_age_4=num_age+4
+str_age_4=str(num_age_4)
+##You can also convert to float using float(age)
+
+
+#Print-Hello name ! In 4 years , your age would be num_age+4
