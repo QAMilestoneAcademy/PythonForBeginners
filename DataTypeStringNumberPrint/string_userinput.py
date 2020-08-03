@@ -11,5 +11,7 @@ num_age_4=num_age+4
 str_age_4=str(num_age_4)
 ##You can also convert to float using float(age)
 
-
+#Print output
+y=float("210"*int(input("enter number")))
+print(y)
 #Print-Hello name ! In 4 years , your age would be num_age+4

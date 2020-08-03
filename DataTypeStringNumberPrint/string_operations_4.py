@@ -20,6 +20,10 @@ print(x)
 x += "eggs"
 print(x)
 
+y=int("3"+"4")
+x=1
+print(x+y)
+
 
 
 
