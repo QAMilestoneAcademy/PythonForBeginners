@@ -1,3 +1,6 @@
+# To get input from the user in Python, you can use the intuitively named input function.
+# The function prompts the user for input, and returns what they enter as a string (with the contents automatically escaped).
+
 #Take input from user and store it in variable
 name = input("Enter your name: ")
 print(type(name))
