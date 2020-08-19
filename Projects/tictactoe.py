@@ -1,36 +1,76 @@
-#Draw A Game Board Solutions
+board = ["  " for i in range(9)]
+print(board)
 
-# This exercise is Part 2 of 4 of the Tic Tac Toe exercise series. The other exercises are: Part 1, Part 3, and Part 4.
-# Time for some fake graphics! Let’s say we want to draw game boards that look like this:
-#
-#  --- --- ---
-# |   |   |   |
-#  --- --- ---
-# |   |   |   |
-#  --- --- ---
-# |   |   |   |
-#  --- --- ---
-# This one is 3x3 (like in tic tac toe). Obviously, they come in many other sizes (8x8 for chess, 19x19 for Go, and many more).
-#
-#### Ask the user what size game board they want to draw, and draw it for them to the screen using Python’s print statement.
 
-board_size = int(input("What size of game board? "))
+def print_board():
+    row1 = "| {} | {} | {} |".format(board[0], board[1], board[2])
+    row2 = "| {} | {} | {} |".format(board[3], board[4], board[5])
+    row3 = "| {} | {} | {} |".format(board[6], board[7], board[8])
 
-# Then, we need to draw each row of the game board. Each row consists of horizontal pieces (---) and vertical pieces (|). Each of these shows up in a pattern, so we can rely on for loops to help with the rendering.
-#
-# To print a single row, we want to do something like this:
-#
-# print(" --- " * board_size)
+    print()
+    print(row1)
+    print(row2)
+    print(row3)
+    print()
 
-# To print the vertical parts of the row, we want something like this, because we don’t care about trailing whitespace, and because we want one more vertical line than the size of the board:
 
-# print("|   " * (board_size + 1))
+def player_move(icon):
+    if icon == "X":
+        number = 1
+    elif icon == "O":
+        number = 2
 
-#Let's make use of for loop to get board as per board size:
+    print("Your turn player {}".format(number))
 
-for index in range(board_size):
-    print(" --- " * board_size)
-    print("|   " * (board_size + 1))
- #Since we want to close it with horizantal lines
+    choice = int(input("Enter your move (1-9): ").strip())
+    if board[choice - 1] == "  ":
+        board[choice - 1] = icon
+    else:
+        print()
+        print("That space is taken!")
 
-print(" --- " * board_size)
+
+def is_victory(icon):
+    if (board[0] == icon and board[1] == icon and board[2] == icon) or \
+            (board[3] == icon and board[4] == icon and board[5] == icon) or \
+            (board[6] == icon and board[7] == icon and board[8] == icon) or \
+            (board[0] == icon and board[3] == icon and board[6] == icon) or \
+            (board[1] == icon and board[4] == icon and board[7] == icon) or \
+            (board[2] == icon and board[5] == icon and board[8] == icon) or \
+            (board[0] == icon and board[4] == icon and board[8] == icon) or \
+            (board[2] == icon and board[4] == icon and board[6] == icon):
+        return True
+    else:
+        return False
+
+
+def is_draw():
+    if "  " not in board:
+        return True
+    else:
+        return False
+
+
+while True:
+    print_board()
+    player_move("X")
+    print_board()
+    if is_victory("X"):
+        print("X Wins! Congratulations!")
+        break
+    elif is_draw():
+        print("Its a draw!")
+        break
+    player_move("O")
+    if is_victory("O"):
+        print_board()
+        print("O Wins! Congratulations!")
+        break
+    elif is_draw():
+        print("Its a draw!")
+        break
+
+
+
+
+
