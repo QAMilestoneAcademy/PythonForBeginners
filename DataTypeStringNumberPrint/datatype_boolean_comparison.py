@@ -1,8 +1,10 @@
 
-#Introduction
+# Another type in Python is the Boolean type. There are two Boolean values: True and False.
+# They can be created by comparing values, for instance by using the equal operator ==.
 
 my_boolean_true = True
 print(my_boolean_true)
+
 
 my_boolean_false = True
 print('"==" is comparison operator unlike "=" which is assignment operator')

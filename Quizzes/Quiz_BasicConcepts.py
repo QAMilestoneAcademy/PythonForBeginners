@@ -19,7 +19,7 @@ print('First line __second line')
 
 #6.Which line of code produces an error?
 
-#print('5' + 6)
+print('5' + 6)
 print(3 + 4)
 print("7" + 'eight')
 print("one" + "2")
