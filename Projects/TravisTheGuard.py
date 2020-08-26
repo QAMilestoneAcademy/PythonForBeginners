@@ -3,6 +3,7 @@ while True:
     print("Hi my name Travis")
     name = input("What is your name? \t ")
     name = name.strip().capitalize()
+    print(name)
     if name in known_users:
         print("Hello {}".format(name))
         stay = input("Would you like to stay? \t")
