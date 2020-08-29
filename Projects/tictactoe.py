@@ -1,7 +1,5 @@
 board = ["  " for i in range(9)]
 
-print(board)
-
 def print_board():
     row1 = "| {} | {} | {} |".format(board[0], board[1], board[2])
     row2 = "| {} | {} | {} |".format(board[3], board[4], board[5])

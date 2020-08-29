@@ -6,7 +6,9 @@
 # Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
 import random
+import time
 actual_num=random.randint(1,9)
+
 guess=0
 count=0
 
@@ -25,5 +27,6 @@ while guess != actual_num and guess != "exit":
     else:
         print("Congratulations ! You got it!")
         print("And it only took you", count, "tries!")
+        time.sleep(10)
 
 print(actual_num)
