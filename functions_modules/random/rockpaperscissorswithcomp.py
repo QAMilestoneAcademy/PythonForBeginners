@@ -3,8 +3,9 @@
 # Rock crushes scissors. Scissors cut paper. Paper covers rock.
 # You and the computer will battle it out in one of the world's most well known schoolyard games.May the best  win.
 from random import randint
+
 while True:
-    player = input('rock (r), paper (p) or scissors (s)?')
+    player = input('rock (r), paper (p) or scissors (s)?.Print ')
 
     if (player == 'r'):
         print('O', end=' ')
@@ -14,6 +15,7 @@ while True:
 
     elif (player == 's'):
         print('>8', end=' ')
+
 
     else:
         print('??')
