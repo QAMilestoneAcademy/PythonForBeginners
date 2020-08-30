@@ -1,6 +1,7 @@
 #!/bin/python3
 #source - https://projects-static.raspberrypi.org/projects/rock-paper-scissors/84609e0e7de7bd1b635252153d8272da9cc17d81/en/resources/rock-paper-scissors-finished-rock-paper-scissors.py
-
+# Rock crushes scissors. Scissors cut paper. Paper covers rock.
+# You and the computer will battle it out in one of the world's most well known schoolyard games.May the best  win.
 from random import randint
 while True:
     player = input('rock (r), paper (p) or scissors (s)?')

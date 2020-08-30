@@ -8,26 +8,8 @@ s.bgcolor("light blue")
 t=turtle.Turtle()
 t.pen(pencolor="red", fillcolor="purple", pensize=10, speed=9)
 t.begin_fill()
-t.fd(200)
-t.rt(90)
-t.fd(100)
-t.rt(90)
-t.fd(200)
-t.rt(90)
-t.fd(100)
-
+for i in range(0,4):
+    t.fd(200)
+    t.rt(90)
 t.end_fill()
-
-# t.rt(90)
 time.sleep(1)
-
-#
-# for i in range(2):
-#     turtle.forward(300)
-#     turtle.right(90)
-#     turtle.forward(150)
-#     turtle.right(90)
-#     i+=1
-#     time.sleep(2)
-
-time.sleep(5)
