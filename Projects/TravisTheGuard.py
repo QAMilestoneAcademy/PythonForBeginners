@@ -18,6 +18,7 @@ while True:
         print("Sorry {} you are not in the list ".format(name))
         enter = input("Would you like to enter the system? \t")
         enter=enter.strip().capitalize()
+
         if enter == "Yes":
          known_users.append(name)
          print("Welcome to the system! \t")
