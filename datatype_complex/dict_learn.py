@@ -20,19 +20,19 @@
 #
 #
 # # get vs [] for retrieving elements
-person_detail = {'name': 'Jack', 'age': 26,'city':"Dubai"}
-
-# Output: Jack
-print(person_detail['name'])
-print(person_detail['age'])
-print(person_detail['city'])
+# person_detail = {'name': 'Jack', 'age': 26,'city':"Dubai"}
 #
-person_detail['age']=27
-print(person_detail)
+# # Output: Jack
+# print(person_detail['name'])
+# print(person_detail['age'])
+# print(person_detail['city'])
+# #
+# person_detail['age']=27
+# print(person_detail)
 #
 # #remove element
-student_grade={"anu":7,"mahi":8,"aarav":10,"anay":9}
-print(student_grade.pop("anay"))
+# student_grade={"anu":7,"mahi":8,"aarav":10,"anay":9}
+# print(student_grade.pop("anay"))
 # print(student_grade)
 #
 # ##add key value pair to the dictionary
@@ -49,18 +49,18 @@ print(student_grade.pop("anay"))
 #   print('Key is present in the dictionary')
 # else:
 #   print('Key is not present in the dictionary')
-student_grade={"anu":7,"mahi":8,"aarav":10,"anay":9}
-if "anu" in student_grade:
-  print('Key is present in the dictionary')
-else:
-  print('Key is not present in the dictionary')
+# student_grade={"anu":7,"mahi":8,"aarav":10,"anay":9}
+# if "anu" in student_grade:
+#   print('Key is present in the dictionary')
+# else:
+#   print('Key is not present in the dictionary')
 
 # # Iterate over dictionaries using for loops
+d = {'x': 10, 'y': 20, 'z': 30}
 # d = {'x': 10, 'y': 20, 'z': 30}
-# d = {'x': 10, 'y': 20, 'z': 30}
-#
-# for element in d.items():
-#     print(element)
+
+for element in d.items():
+    print(element)
 #
 # for dict_key, dict_value in d.items():
 #     print(dict_key,'->',dict_value)

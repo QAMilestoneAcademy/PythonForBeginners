@@ -11,10 +11,10 @@ family = []
 name = turtle.textinput("My family",
                         "Enter a name, or just hit [ENTER] to end:")
 
+
 while name != "":
 
     family.append(name)
-
     name = turtle.textinput("My family",
                         "Enter a name, or just hit [ENTER] to end:")
 
@@ -26,5 +26,5 @@ for x in range(50):
     t.write(family[x%len(family)], font = ("Arial", int((x+4)/4), "bold") )
     t.left(360/len(family)+2)
 
-time.sleep(1)
-
+time.sleep(5)
+#

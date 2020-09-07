@@ -6,7 +6,7 @@ Birthdays ={
 print("Welcome to the Birthday game ! We have the birthdays to:")
 for x in Birthdays:
    print(x)
-
+#
 choice= input("\nWho's birthday do you want to look up?")
 
 if choice in Birthdays:
@@ -16,6 +16,7 @@ else:
    print("We do not have that birthday information.")
    add_birthday=input("Would you like to add Birthday in the list?")
    if add_birthday in "Yes" or "yes":
+
        name_friend=input("Add name of your friend \t")
        birth_date=input("Add birthday date\t")
        Birthdays.update({name_friend: birth_date})
