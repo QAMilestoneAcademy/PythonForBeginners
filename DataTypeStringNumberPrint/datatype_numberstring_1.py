@@ -1,5 +1,5 @@
 #data type -string
-name="Srijan"
+name="Bob"
 #data type -integer
 print(type(name))
 age=13
